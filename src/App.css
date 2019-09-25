@@ -1,0 +1,223 @@
+:root {
+  --main-bg-color: #252627;
+  --main-red-color: #DE3C4B;
+  --main-gray-color: #EEEEEE;
+}
+
+.App {
+  background-color: var(--main-bg-color);
+  color: #F6F7EB;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+}
+
+.App h2 {
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.App a {
+  color: gray;
+}
+
+.App a:hover {
+  color: #DE3C4B;
+  text-decoration: none;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.sidebar{
+  position: fixed;
+  height: 100%;
+  width: 7rem;
+  background-color: #181818;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.sideContent {
+  display: block;
+  padding: 1.5rem;
+}
+
+.sidebar i {
+  font-size: 1.2rem;
+  transition: ease-out .5s;
+  margin-bottom: 0.8rem;
+}
+
+.main{
+  margin-left: 7rem;
+}
+
+
+.home {
+  width: 70%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home h1 {
+  font-weight: bolder;
+}
+
+.icon {
+  margin-right: 3rem;
+  transition: ease-out .5s;
+}
+
+.icon i{
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+.canvas {
+  background-color: white;
+  position: fixed;
+  top: 10vw;
+  right: 10vw;
+}
+
+.projects {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  transition: .5s ease;
+  margin: 0;
+}
+
+.projects:hover img, .projects:hover .details {
+  opacity: .2;
+}
+
+.projects img{
+  width: 90%;
+  border-radius: 8px;
+  transition: .3s ease;
+}
+
+.projects .middle button {
+  width: 8rem;
+  padding: 0.5rem 1rem;
+  background-color: #DE3C4B; 
+  border-radius: 8px;
+  color: white;
+  margin: .5rem;
+  border: none;
+}
+
+.projects .middle {
+  opacity: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+
+
+.projects:hover .middle {
+  opacity: 1;
+}
+
+
+
+
+
+.details {
+  background-color: #EEEEEE;
+  color: black;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  border-radius: 8px;
+  color: #313131;
+}
+
+.details h5 {
+  font-weight: bolder;
+  letter-spacing: 0.2px;
+}
+
+.details p {
+  padding-top: 2rem;
+}
+
+.form {
+  background-color: #EEEEEE;
+  border-radius: 8px;
+  padding: 2.5rem;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.form .formControl:focus {
+  border: 0.4px solid var(--main-red-color);
+  box-shadow: 0px 0px 4px 1px var(--main-red-color);
+}
+
+.form .button {
+  display: block;
+  width: 8rem;
+  padding: 0.5rem 1rem;
+  background-color: #DE3C4B; 
+  border-radius: 8px;
+  color: white;
+  border: none;
+  margin: 0 auto;
+}
+
+.particles {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .sideContent {
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  .main{
+    margin-left: 0;
+  }
+
+  .vertical-center {
+    margin: 0;
+    position: static;
+    transform: translateY(0%);
+  }
+
+  .home {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .hide {
+    display: none;
+  }
+}
