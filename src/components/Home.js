@@ -16,6 +16,8 @@ const Home = () => {
 	  { value: "REST API", count: 30 },
 	  { value: "Apollo Client", count: 25 },
 	  { value: "Photoshop", count: 28 },
+	  { value: "Ruby on Rails", count: 35 },
+	  { value: "Bootstrap", count: 35 },
 	];
 
 	const customRenderer = (tag, size, color) => (
@@ -41,11 +43,12 @@ const Home = () => {
 						<Col md={7} sm={12} style={{padding: '2rem'}}>
 							<h1>
 								Hi, <br/>
-								I'm <span style={{color: "#DE3C4B"}}>Dat</span>, <br/>
+								I'm <span style={{color: "#DE3C4B"}}>Daniel</span>, <br/>
 								a web developer<span style={{color: "#DE3C4B"}}>.</span>
 							</h1>
-							
-							<p>Front End Developer, Back End Develpoer, ReactJS</p>
+							<hr/>
+							<h5><strong>Full-Stack Developer</strong></h5>
+							<p>Specialized in: Ruby on Rails, ReactJS, NodeJS</p>
 							
 							<br/>
 
@@ -53,7 +56,7 @@ const Home = () => {
 								<i class="fab fa-github-square"></i>
 								<span><b>Github</b></span>
 							</a>
-							<a href="https://www.linkedin.com/in/dat-pham-609792140/" target="blank" className="icon" style={{"white-space": "nowrap"}}>
+							<a href="https://www.linkedin.com/in/danpt12" target="blank" className="icon" style={{"white-space": "nowrap"}}>
 								<i class="fab fa-linkedin"></i>
 								<span><b>Linkedin</b></span>
 							</a>
